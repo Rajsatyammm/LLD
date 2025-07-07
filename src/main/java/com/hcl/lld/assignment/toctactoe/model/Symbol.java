@@ -11,4 +11,8 @@ public class Symbol {
     public char getCh() {
         return ch;
     }
+
+    public String toString() {
+        return ch + "";
+    }
 }

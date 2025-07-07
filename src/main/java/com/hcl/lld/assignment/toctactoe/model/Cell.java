@@ -6,5 +6,9 @@ import lombok.Getter;
 public class Cell {
     private int x;
     private int y;
-    private Symbol symbol;
+    private Symbol symbol = new Symbol('.');
+
+    public String toString() {
+        return symbol.toString();
+    }
 }

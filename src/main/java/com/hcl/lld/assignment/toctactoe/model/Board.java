@@ -12,15 +12,18 @@ public class Board {
     Board(int boardSize) {
         board = new ArrayList<>(boardSize);
         for (int i = 0; i < boardSize; i++) {
-            board.add(i, new ArrayList<>(boardSize));
+            board.add(new ArrayList<>());
+            for (int j = 0; j < boardSize; j++) {
+                board.get(i).add(new Cell());
+            }
         }
     }
 
     public void printBoard() {
         for (int i = 0; i < board.size(); i++) {
             var b = board.get(i);
-            for (int j = 0; j < b.size(); i++) {
-                System.out.print("M ");
+            for (int j = 0; j < b.size(); j++) {
+                System.out.print(b.get(j) + "  ");
             }
             System.out.println();
         }
