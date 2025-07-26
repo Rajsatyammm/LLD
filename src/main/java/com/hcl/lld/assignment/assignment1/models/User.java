@@ -1,18 +1,14 @@
-package com.hcl.lld.assignment.assignment1;
+package com.hcl.lld.assignment.assignment1.models;
 
-public abstract class Employee {
+public abstract class User {
     private String name;
     private Integer age;
     private Double salary;
-    private EmployeeType type;
 
-    Employee(){}
-
-    public Employee(String name, Integer age, Double salary, EmployeeType type) {
+    public User(String name, Integer age, Double salary) {
         this.name = name;
         this.age = age;
         this.salary = salary;
-        this.type = type;
     }
 
     public String getName() {
@@ -39,11 +35,12 @@ public abstract class Employee {
         this.salary = salary;
     }
 
-    public EmployeeType getType() {
-        return type;
-    }
-
-    public void setType(EmployeeType type) {
-        this.type = type;
+    @Override
+    public String toString() {
+        return "User{" +
+            "name='" + name + '\'' +
+            ", age=" + age +
+            ", salary=" + salary +
+            '}';
     }
 }

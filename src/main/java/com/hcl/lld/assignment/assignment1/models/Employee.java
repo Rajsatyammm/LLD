@@ -1,14 +1,20 @@
-package com.hcl.lld.assignment.assignment1;
+package com.hcl.lld.assignment.assignment1.models;
 
-public abstract class User {
+import com.hcl.lld.assignment.assignment1.enums.EmployeeType;
+
+public abstract class Employee {
     private String name;
     private Integer age;
     private Double salary;
+    private EmployeeType type;
 
-    public User(String name, Integer age, Double salary) {
+    Employee(){}
+
+    public Employee(String name, Integer age, Double salary, EmployeeType type) {
         this.name = name;
         this.age = age;
         this.salary = salary;
+        this.type = type;
     }
 
     public String getName() {
@@ -35,12 +41,11 @@ public abstract class User {
         this.salary = salary;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-            "name='" + name + '\'' +
-            ", age=" + age +
-            ", salary=" + salary +
-            '}';
+    public EmployeeType getType() {
+        return type;
+    }
+
+    public void setType(EmployeeType type) {
+        this.type = type;
     }
 }

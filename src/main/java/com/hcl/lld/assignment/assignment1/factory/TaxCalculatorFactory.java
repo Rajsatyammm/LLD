@@ -1,4 +1,9 @@
-package com.hcl.lld.assignment.assignment1;
+package com.hcl.lld.assignment.assignment1.factory;
+
+import com.hcl.lld.assignment.assignment1.enums.FTCalculator;
+import com.hcl.lld.assignment.assignment1.enums.InternCalculator;
+import com.hcl.lld.assignment.assignment1.enums.PTCalculator;
+import com.hcl.lld.assignment.assignment1.models.Employee;
 
 public class TaxCalculatorFactory {
 
