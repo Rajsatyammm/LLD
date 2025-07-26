@@ -1,5 +1,6 @@
 package com.hcl.lld.assignment.parking_lot.model;
 
+import com.hcl.lld.assignment.parking_lot.model.vehicle.VehicleType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
